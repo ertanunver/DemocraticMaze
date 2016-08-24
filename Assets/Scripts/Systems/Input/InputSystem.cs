@@ -13,7 +13,7 @@ public class InputSystem : MonoBehaviour {
 			} else if (Input.GetKey (player.right)) {
 				player.velocity += -player.acceleration * Time.deltaTime;
 			} else {
-				if (-0.1f <= player.velocity && player.velocity <= 0.1f) {
+				if (-0.01f <= player.velocity && player.velocity <= 0.01f) {
 					player.velocity = 0;
 				} else {
 					player.velocity += -Mathf.Sign (player.velocity) * player.acceleration * Time.deltaTime;	
