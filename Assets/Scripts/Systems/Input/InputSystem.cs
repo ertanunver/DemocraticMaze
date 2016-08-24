@@ -23,10 +23,6 @@ public class InputSystem : MonoBehaviour {
 			if (Mathf.Abs(player.velocity) > player.maxVelocity) {
 				player.velocity = Mathf.Sign (player.velocity) * player.maxVelocity;
 			}
-
-			if (Input.GetKey(player.action)) {
-
-			}
 		}
 
 	}
